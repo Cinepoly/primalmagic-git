@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "primalmagic",
+	"version": "${version}",
+	"name": "primalmagic",
+	"description": "这是一个有关于魔法的mod，在这个mod当中你会发现许多新的装备、武器，以及新的维度，在新的维度当中你还会发现新的群系和新的生物",
+	"authors": [
+		"Mariah shiranui"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/primalmagic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.Primal.PrimalMagic"
+		],
+		"fabric-datagen": [
+			"com.Primal.PrimalMagicDataGenerator"
+		],
+		"client": [
+			"com.Primal.PrimalMagicClient"
+		]
+	},
+	"mixins": [
+		"primalmagic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
